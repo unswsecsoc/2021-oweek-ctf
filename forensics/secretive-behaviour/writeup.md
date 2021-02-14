@@ -17,6 +17,11 @@ HQ is up to it again... Hiding messages inside of messages.
 ## Points
 70
 
+## Hint
+Clues you might have picked up:
+1.    Lots of whitespaces in the text
+2.    Messages inside of messages
+Putting together the clues, you might have found [stegsnow]( http://manpages.ubuntu.com/manpages/bionic/man1/stegsnow.1.html)
 
 ## Solution
 <details>
@@ -37,7 +42,7 @@ Text Steganography
 8. `$ stegsnow -C -p "BeSecretive" redacted.txt` in the file directory will give the flag
 
 Additional Comments:
-- Placing it was in forensics was not a mistake, few thought it was a crypto challenge because of the more obvious Base64
+- Placing it in forensics was not a mistake, few thought it was a crypto challenge because of the more obvious Base64
 - This was one of the more technical questions, so don't be sad if you didn't get it
 - Congrats to everyone who persisted and ended up finding the flag!
 
