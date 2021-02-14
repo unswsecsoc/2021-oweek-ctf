@@ -1,0 +1,5 @@
+# Username: skynet
+# Password: b33pb00pWeRu1EtHeW0rLD8392389
+
+User-agent: *
+Disallow: /

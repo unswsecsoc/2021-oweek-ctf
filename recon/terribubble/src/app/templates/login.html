@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terribubble Student Management System</title>
+    <style>
+        html, body {
+            background: #00043f;
+            color: #fbfbfb;
+            font-family: 'Papyrus', sans-serif;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1348px;
+            margin: 0 auto;
+        }
+        .alert {
+            position: relative;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+
+        img {
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .alert-primary {
+            color: #ecff97;
+            background-color: #96b100;
+            border-color: #f3ff89;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if message != '' %}
+            <div class="alert alert-danger"> {{ message }} </div>
+        {% endif %}
+        <h1>Terribubble Student Management System</h1>
+
+        <form action="/" method="post">
+            <label for="name">Last name: </label>
+            <input type="text" name="name" id="name"><br>
+            <label for="id">13 Digit Student ID: </label>
+            <input type="text" name="id" id="id"><br>
+            <button type="submit">Check student</button>
+        </form>
+    </div>
+</body>
+</html>

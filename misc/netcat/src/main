@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import sys
+
+print("Meow! Congratulations on successfully connecting!")
+sys.stdout.flush()
+
+resp = input(
+    'To get the flag, type "meow" back at me, and press the enter key so I can hear it! '
+)
+sys.stdout.flush()
+
+while resp.lower().strip() != "meow":
+    resp = input("That doesn't sound like a meow. Try again :) ")
+    sys.stdout.flush()
+
+print("\nYay! OWEEK{m30w_i_n3tme0WeD}")
+sys.stdout.flush()

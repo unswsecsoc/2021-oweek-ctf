@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beep boop</title>
+    <style>
+        @import url("https://www.abiram.me/assets/fonts/fonts.css");
+
+        html, body {
+            background: #1f2e38;
+            color: #fbfbfb;
+            font-family: 'Comic Sans MS', sans-serif;
+            padding: 30px 0;
+            text-align: left;
+        }
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1348px;
+            margin: 0 auto;
+        }
+
+        /* yoinked from bootstrap */
+
+        .alert {
+            position: relative;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+
+        .alert-primary {
+            color: #00855d;
+            background-color: #ccffe7;
+            border-color: #b8ffea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if message != ''%}
+        <div class="alert alert-primary"> {{ message }} </div>
+        {% endif %}
+        <h1></h1>
+    </div>
+</body>
+</html>
